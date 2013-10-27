@@ -19,5 +19,9 @@ module Pinteresting
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    # Required for Heroku
+    config.assets.initialize_on_precompile = false
+    config.secret_key_base = 'e8aab50cec8a06a75694111a4cbaf6e22fc288ccbc6b268683aae7273043c69b15ca07d10c92a788dd6077a54762cbfcc55f19c3459f7531221b3169f8171a53'
   end
 end
