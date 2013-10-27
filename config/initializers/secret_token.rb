@@ -9,8 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Pinteresting::Application.config.secret_key_base = if Rails.env.development? or Rails.env.test?
-                                                  ('x' * 30) # meets minimum requirement of 30 chars long
-                                                else
-                                                  ENV['SECRET_TOKEN']
-                                                end
+Pinteresting::Application.config.secret_key_base = '088c3aa809dbeaa5e098857f1a984d6c735eddf046e23ad6b5e3fe40807d7781ae406fbc1ed70ac61f438c45c85b186d83e44d04d313396e9a2c3daa5ff4966d'
