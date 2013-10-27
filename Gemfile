@@ -10,14 +10,16 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
-group :development do
-  gem 'sqlite3', '1.3.8'
-end
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
