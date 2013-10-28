@@ -33,4 +33,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+<<<<<<< HEAD
 .env
+=======
+/public/system/*
+>>>>>>> release/v3
